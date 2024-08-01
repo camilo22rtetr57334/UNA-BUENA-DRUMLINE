@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Drumline</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #ff4d4d;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            padding: 20px;
+            background: white;
+            margin: 20px 0;
+        }
+        h1, h2 {
+            color: #ff4d4d;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .calendar {
+            background: #ffefc6;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #e04343;
+        }
+        .download-btn {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .download-btn:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a Mi Drumline</h1>
+        <p>La mejor banda de marcha en la ciudad</p>
+    </header>
+    <nav>
+        <a href="#biography">Biografía</a>
+        <a href="#videos">Videos</a>
+        <a href="#gallery">Galería</a>
+        <a href="#calendar">Calendario</a>
+        <a href="#downloads">Descargas</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+    <div class="container">
+        <section id="biography">
+            <h2>Biografía</h2>
+            <p>Somos una apasionada drumline con años de experiencia en el mundo de las bandas de marcha. Nuestro objetivo es proporcionar una actuación emocionante y enérgica en cada evento.</p>
+        </section>
+        <section id="videos">
+            <h2>Videos</h2>
+            <p>Aquí puedes ver algunos de nuestros videos destacados:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tu_video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section id="gallery">
+            <h2>Galería</h2>
+            <div class="gallery">
+                <img src="foto1.jpg" alt="Actuación en vivo">
+                <img src="foto2.jpg" alt="Ensayo de la banda">
+                <img src="foto3.jpg" alt="Evento reciente">
+            </div>
+        </section>
+        <section id="calendar">
+            <h2>Calendario de Eventos</h2>
+            <div class="calendar">
+                <p><strong>Agosto 2024</strong>: Competencia Regional - 15 de Agosto</p>
+                <p><strong>Septiembre 2024</strong>: Desfile de Otoño - 21 de Septiembre</p>
+                <p><strong>Octubre 2024</strong>: Festival de Drumline - 12 de Octubre</p>
+            </div>
+        </section>
+        <section id="downloads">
+            <h2>Descargas</h2>
+            <p>Descarga nuestros archivos más recientes:</p>
+            <a href="archivo1.pdf" class="download-btn" download>Descargar Archivo 1</a>
+            <a href="archivo2.zip" class="download-btn" download>Descargar Archivo 2</a>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form class="contact-form" action="mailto:tucorreo@ejemplo.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Mi Drumline. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
